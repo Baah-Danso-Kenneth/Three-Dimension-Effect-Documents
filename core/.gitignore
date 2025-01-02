@@ -1,0 +1,53 @@
+# Node.js dependencies
+node_modules/
+
+# Build output directories
+dist/
+build/
+
+# Temporary files and logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment settings
+.env
+.env.local
+.env.*.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files created by OS or tools
+*.log
+*.tmp
+*.lock
+*.bak
+
+# Git-specific files
+.git/
+.gitignore
+
+# Parcel/Webpack cache
+.cache/
+.parcel-cache/
+
+# Temporary files created during development
+*.log
+*.pid
+*.seed
+
+# Optional: Exclude assets you don't want to track
+public/assets/large_files/
+
+# Optional: Exclude compiled TypeScript (if using TypeScript)
+*.js.map
+*.d.ts
+*.tsbuildinfo
