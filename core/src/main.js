@@ -20,5 +20,10 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 camera.position.z = 5;
+const canvas = document.querySelector("canvas.threejs")
 
-console.log(camera)
+const renderer = new THREE.WebGLRenderer({canvas});
+renderer.setSize(window.innerWidth, window.innerHeight)
+renderer.render(scene,camera)
+
+console.log(canvas)
