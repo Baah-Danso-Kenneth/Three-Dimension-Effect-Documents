@@ -25,12 +25,16 @@ camera.position.z = 5;
 const canvas = document.querySelector("canvas.threejs")
 
 
-const renderer = new THREE.WebGLRenderer({canvas});
+const renderer = new THREE.WebGLRenderer({canvas: canvas, antialias:true});
 renderer.setSize(window.innerWidth, window.innerHeight)
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.9999999925494194))
+
+
 
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping=true;
-controls.autoRotate= true
+
+// controls.autoRotate= true
 
 window.addEventListener('resize',()=>{
   camera.aspect = window.innerWidth / window.innerHeight

@@ -32,3 +32,5 @@ Renderer: takes information from both Scene and Camera puts all together and gen
 
 
 FOV: Referred to as field of View determines how wide or small the camera is being centered on an object
+
+Antializing: Is when the edges of a cube or object get wavvy or wanky
